@@ -1,4 +1,10 @@
-/* ===== RESET ===== */
+:root{
+    --corprincipal:  rgb(255,183,222);
+    --cro2:#FFC0CB;
+    --cor3:#FFB6C1;
+    --cor4:#FF1493;
+    --cor5:#FF69B4;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,53 +12,43 @@
 }
 
 body {
-    background-color: rgb(255, 183, 222);
-    font-family: Arial, sans-serif;
+    background-color: var(--corprincipal);
 }
 
 /* ===== HEADER & FOOTER ===== */
 .headerFooter {
-    background-color: rgb(114, 235, 235);
+    background-color:var(--cor4);
     width: 90%;
     margin: auto;
-    height: 80px;
+   /*height: 80px;*/   
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: end;
+    justify-content:center;
+    text-align:center;
     border: solid 1px rgb(112, 112, 112);
 }
 
-/* ===== MENU DE NAVEGAÇÃO ===== */
-.menu {
-    background-color: rgb(114, 235, 235);
-    width: 90%;
-    margin: auto;
-    border: 1px solid rgb(112, 112, 112);
-    margin-bottom: 15px;
-}
-
-.menu ul {
-    list-style: none;
+#menucomtainer{
     display: flex;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
+    list-style:none;
+    gap:20px;
 }
-
-.menu li {
-    padding: 15px 10px;
+.menu{
+          border:solid 1px black;
+             list-style:none;
+             padding: 10px;
+             background-color: var(--cro2);
+             border-radius: 5px;
 }
+.menu:hover{
+background-color: #FF1493;
+transition:0.5s;
+border: none;
 
-.menu a {
+}
+.menu a{
     text-decoration: none;
-    color: black;
-    font-weight: bold;
-    transition: color 0.3s;
-}
 
-.menu a:hover {
-    color: deeppink;
 }
 
 /* ===== CARROSSEL ===== */
@@ -113,6 +109,9 @@ body {
 .cards img {
     width: 100%;
     height: 80%;
-    object-fit: cover;
     border-bottom: 1px solid #ccc;
+}
+#imglogo{
+    width: 80px;
+
 }
